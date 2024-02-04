@@ -46,7 +46,7 @@ address {
 
 .header {
     /* padding-top: 24px;
-    padding-bottom: 24px; */
+    padding-bottom: 24px;  */
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     justify-content: space-between;
@@ -56,6 +56,8 @@ address {
     display: flex;
     align-items: center;
     margin-right: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
 }
 
 .header-container {
@@ -72,10 +74,10 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: flex;
-    margin-left: 16px;
+    /* margin-left: 16px;
     margin-right: 189px;
     margin-top: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 16px; */
 }
 
 .logo-header-span {
@@ -111,15 +113,14 @@ address {
 }
 
 .hero-title {
-    color: var(--WHITE, #FFF);
-    font-size: 56px;
-    text-align: center;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    line-height: 1.07;
+    font-size: 36px;
     letter-spacing: 0.02em;
-    margin: 0 auto;
-    margin-bottom: 48px;
-    max-width: 496px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    line-height: 1.11111;
 }
 
 .hero-button-service {
@@ -175,45 +176,37 @@ address {
 }
 
 .facilities-list {
-    display: flex;
-    gap: 24px;
 }
 
 .facilities-list-items {
-    width: calc((100% - 72px) / 4);
+
 }
 
 .card-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 264px;
-    height: 112px;
-    border-radius: 4px;
-    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
-    background: var(--CLOUD, #F4F4FD);
-    margin-bottom: 8px;
-    background-color: #f4f4fd;
+    display: none;
 }
 
 
 .facilities-title {
     color: var(--NAVY-BLUE, #2E2F42);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .facilities-paragraph {
     color: var(--SLATE, #434455);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
+    width: 288px;
+    height: 120px;
 }
 
 /*--------------------*/
@@ -447,7 +440,8 @@ address {
 
 .container-footer {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .content-wrapper {
@@ -464,7 +458,7 @@ address {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
-    margin-right: 120px;
+    
 }
 
 
@@ -545,7 +539,7 @@ address {
 
 .footer-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
 }
 
 .footer-email {
@@ -555,7 +549,6 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-left: 80px;
     margin-bottom: 16px;
 }
 
@@ -572,7 +565,6 @@ address {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    margin-left: 80px;
 }
 
 .email-btn {
@@ -866,7 +858,7 @@ address {
 
 
 
-/*----АДАПТИВ------*/
+/**----АДАПТИВ планшет------*/
 @media screen and (min-width: 768px) {
 
     
@@ -978,9 +970,35 @@ address {
 }
 /*-----------------------------*/
 /*----------------херо---------*/
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07143
+}
 
+.facilities-title {
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: left;
+}
+
+.facilities-paragraph {
+    font-weight: 500;
+}
 /*-----------------------------*/
 
+/*-----------facilities--------*/
+.facilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 312px;
+}
+
+.facilities-list-items {
+    height: 120px;
+    margin: 0 auto;
+}
+/*-----------------------------*/
 /*------3 section team----------*/
     .team-list {
         display: flex;
@@ -1009,6 +1027,8 @@ address {
 /*-----------------------------*/
 }
 
+
+/**----АДАПТИВ комп'ютер------*/
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
@@ -1029,6 +1049,51 @@ address {
     gap: 40px;
 }
 /*-----------------------------*/
+/*----------------херо---------*/
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    max-width: 496px;
+}
+/*-----------------------------*/
+
+/*-----------facilities--------*/
+.facilities-list {
+    display: flex;
+    gap: 24px;
+}
+
+.facilities-list-items {
+    width: calc((100% - 72px) / 4);
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    margin-bottom: 8px;
+    background-color: #f4f4fd;
+}
+
+.facilities-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.footer-paragraph {
+    font-weight: 400;
+}
+/*-----------------------------*/
+
 /*------3 section team----------*/
 .team-list {
     flex-direction: row;
@@ -1046,6 +1111,30 @@ address {
         width: calc((100% - 48px) / 3);
 /*-----------------------------*/
 }
+
+/** footer */
+.container-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-logo {  
+margin-right:        
+}
+
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-email {
+    margin-left: 80px;
+}
+
+.footer-input {
+margin-left: 80px;
+}
+/*-----------------------------*/
 }
 /*--------------------*/
 
