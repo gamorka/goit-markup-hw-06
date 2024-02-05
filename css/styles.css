@@ -99,11 +99,124 @@ address {
     border: none;
 }
 
-/* .menu {
+/** Mobile menu **/
+
+.menu-header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    padding: 72px 16px 40px;
+    /* transform: translateX(-100%); */
+    transition: transform 250ms;
+}
 
-} */
+.menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    justify-content: space-between;
+}
+
+.menu-header-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu-header-item {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+.menu-header-link:active,
+.menu-header-link:focus {
+    color: #404BBF;
+}
+
+.menu-address {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 48px;
+}
+
+.menu-address-list {
+    flex-direction: column;
+    display: flex;
+    gap: 40px;
+}
+
+.menu-address-link {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.menu-address-link:active,
+.menu-address-link:focus {
+    color: #404BBF;
+}
+
+.menu-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu-social-items {
+    width: 40px;
+    height: 40px;
+    gap: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-social-item-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Mobile menu end */
 /*-----------------*/
 
 /*-----SECTION 1-----*/
@@ -143,7 +256,6 @@ address {
     align-items: flex-start;
     gap: 10px;
     border-radius: 4px;
-    ;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     min-width: 169px;
@@ -174,19 +286,11 @@ address {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-/* .facilities-list {
-}
-
-.facilities-list-items {
-
-} */
 
 .card-icon {
     display: none;
@@ -233,10 +337,6 @@ address {
     text-transform: capitalize;
     margin-bottom: 72px;
 }
-
-/* .team-list {
-
-} */
 
 .team-img {
     display: block;
@@ -869,13 +969,6 @@ address {
 .check-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu {
-    width: 100%;
-    height: 100%;
-    color: #fff; 
-    top: 0;
-}
 /*--------------------*/
 
 
@@ -989,6 +1082,11 @@ address {
 
 .address a:focus {
     color: #404bbf;
+}
+
+/* Menu */
+.menu-header {
+    display: none;
 }
 /*-----------------------------*/
 /*----------------херо---------*/
