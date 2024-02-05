@@ -445,7 +445,7 @@ address {
 }
 
 .content-wrapper {
-    margin-right: 120px;
+    text-align: center;
 }
 
 .footer-logo {
@@ -458,7 +458,6 @@ address {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
-    
 }
 
 
@@ -480,6 +479,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+    text-align: left;
 }
 
 .footer-style {
@@ -494,11 +494,15 @@ address {
     letter-spacing: 0.02em;
     color: var(--WHITE, #FFF);
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .social-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 16px;
+
 }
 
 .footer-list-icon {
@@ -525,6 +529,10 @@ address {
 .social-icon {
     fill: var(--WHITE, #f4f4fd);
     gap: 16px;
+}
+
+.submit-email-input {
+    text-align: center;
 }
 
 .social-paragraph {
@@ -565,6 +573,7 @@ address {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
+    margin-bottom: 16px;
 }
 
 .email-btn {
@@ -584,8 +593,10 @@ address {
     background: var(--IRIS, #4D5AE5);
     border: none;
     gap: 24px;
-    min-width: 165px;
+    width: 165px;
     cursor: pointer;
+    margin-left: 77px;
+    margin-right: 78px;
 }
 
 .email-btn:hover {
@@ -595,7 +606,6 @@ address {
 }
 
 .footer-icon-btn {
-    margin-left: 16px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -620,7 +630,7 @@ address {
 }
 
 .modal {
-    width: 408px;
+    width: 288px;
     min-height: 584px;
     flex-shrink: 0;
     border-radius: 4px;
@@ -629,7 +639,7 @@ address {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 16px 16px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -677,7 +687,7 @@ address {
 
 
 .modal-title {
-    width: 360px;
+    width: 256px;
     height: 24px;
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
@@ -686,7 +696,7 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
+    margin-bottom: 34px;
 }
 
 .modal-input {
@@ -801,7 +811,6 @@ address {
 }
 
 .modal-user-comment {
-    margin-bottom: 16px;
 }
 
 .check-text {
@@ -853,6 +862,13 @@ address {
 
 .check-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    color: #fff; 
+    top: 0;
 }
 /*--------------------*/
 
@@ -1002,17 +1018,19 @@ address {
 /*------3 section team----------*/
     .team-list {
         display: flex;
+        gap: 64px 24px;
         flex-wrap: wrap;
-        margin: 72px 96px;
+        justify-content: center;
+
 }
 
     .team-list-item {
         height: 428px;
-        width: 264px;
-/* ! немає відступу між картками */
+
 }
 
 /*-----------------------------*/
+
 /*------4 section portfolio----*/
     .portfolio-list {
         display: flex;
@@ -1025,6 +1043,53 @@ address {
         gap: 24px;
         }
 /*-----------------------------*/
+
+/* footer */
+    .container-footer {
+        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 72px 24px;
+        max-width: 530px
+}
+
+    .content-wrapper {
+        text-align: left;
+    }
+
+    .footer-logo {
+
+    } 
+
+    .social-paragraph {
+        text-align: left;
+    }
+
+    .submit-email-input {
+        text-align: left;
+}
+
+    .footer-form {
+        flex-direction: row;
+}
+    .email-btn {
+        height: 40px;
+        margin-left: 24px;
+    }
+/*-----------------------------*/
+
+/* modal */
+
+.modal {
+    width: 408px;
+}
+
+.modal-title {
+    width: 360px;
+    margin-bottom: 16px;
+}
+/*-----------------------------*/
+
 }
 
 
@@ -1096,17 +1161,18 @@ address {
 
 /*------3 section team----------*/
 .team-list {
-    flex-direction: row;
-    gap: 40px;
+    align-items: baseline;
+    flex-wrap: nowrap;
 }
+
+
 .team-list-item {
 
 }
-/* ! немає відступу між картками*/
 
 /*-----------------------------*/
 /*------4 section portfolio-----*/
-    .portfolio-list-items {
+.portfolio-list-items {
         margin: 0 auto;
         width: calc((100% - 48px) / 3);
 /*-----------------------------*/
@@ -1114,8 +1180,13 @@ address {
 
 /** footer */
 .container-footer {
-    display: flex;
-    align-items: baseline;
+    /* display: flex;
+    align-items: baseline; */
+    flex-wrap: nowrap;
+}
+
+.content-wrapper {
+margin-right: 120px;
 }
 
 .footer-logo {  
@@ -1134,6 +1205,13 @@ margin-right:
 .footer-input {
 margin-left: 80px;
 }
+
+.email-btn {
+    
+}
+/*-----------------------------*/
+
+/* modal */
 /*-----------------------------*/
 }
 /*--------------------*/
