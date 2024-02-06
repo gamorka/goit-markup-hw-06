@@ -45,8 +45,6 @@ address {
 /*--------HEADER-------*/
 
 .header {
-    /* padding-top: 24px;
-    padding-bottom: 24px;  */
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     justify-content: space-between;
@@ -63,6 +61,7 @@ address {
 .header-container {
     display: flex;
     align-items: center;
+    height: 56px;
 }
 
 .header-logo {
@@ -101,6 +100,13 @@ address {
 
 /** Mobile menu **/
 
+.is-open {
+    /* transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; */
+}
+
 .menu-header {
     display: flex;
     flex-direction: column;
@@ -112,8 +118,9 @@ address {
     background-color: #fff;
     z-index: 10;
     padding: 72px 16px 40px;
-    /* transform: translateX(-100%); */
-    transition: transform 250ms;
+    transform: translateX(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .menu-close-btn {
@@ -137,6 +144,10 @@ address {
 .menu-close-btn:focus {
     background-color: #404bbf;
     border: none;
+}
+
+.mobile-current {
+    color: #404BBF;
 }
 
 .menu-nav {
@@ -225,10 +236,11 @@ address {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
+    padding: 72px 52px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob.jpg);
     max-width: 1440px;
     margin: 0 auto;
+
 }
 
 .hero-title {
@@ -240,6 +252,8 @@ address {
     text-align: center;
     color: #fff;
     line-height: 1.11111;
+    margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .hero-button-service {
@@ -276,7 +290,7 @@ address {
 /*-----SECTION 2-----*/
 
 .facilities-block {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .visually-hidden {
@@ -296,6 +310,17 @@ address {
     display: none;
 }
 
+.facilities-list {
+    flex-direction: column;
+}
+
+.facilities-list-items {
+    margin-bottom: 72px;
+}
+
+.facilities-list-items:last-child {
+    margin-bottom: 0px;
+}
 
 .facilities-title {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -315,8 +340,7 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 288px;
-    height: 120px;
+    gap: 72px;
 }
 
 /*--------------------*/
@@ -324,7 +348,7 @@ address {
 /*-----SECTION 3-----*/
 .hero-team-list {
     background: var(--CLOUD, #F4F4FD);
-    padding: 120px 0
+    padding: 96px 0px;
 }
 
 .team-title {
@@ -348,7 +372,13 @@ address {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
-    margin-bottom: 72px;   
+    margin: 0 auto;
+    margin-bottom: 72px; 
+    width: 264px;  
+}
+
+.team-list-item:last-child {
+    margin-bottom: 0;
 }
 
 .team-members {
@@ -419,8 +449,7 @@ address {
 
 /*-----SECTION 4-----*/
 .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 96px 0px;
 }
 
 .portfolio-title {
@@ -435,19 +464,22 @@ address {
 }
 
 .portfolio-list {
-    /* display: flex;  */
-    flex-wrap: wrap;
-    gap: 24px;
-    column-gap: 24px;
-    row-gap: 48px;
+    display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        column-gap: 24px;
+        row-gap: 48px;
 }
 
 .portfolio-list-items {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 288px;
-    height: 400px;
     width: 100%;
     margin-bottom: 48px;
+}
+
+.portfolio-list-items:last-child {
+    margin-bottom: 0;
 }
 
 .portfolio-list-items:hover {
@@ -729,12 +761,6 @@ address {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
-
 .modal {
     width: 288px;
     min-height: 584px;
@@ -980,7 +1006,11 @@ address {
     .container {
         max-width: 768px;
     }
-/*-------------header----------*/
+/*-------------header планшет----------*/
+.header-container {
+    height: 72px;
+}
+
 .header-logo {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -1089,10 +1119,16 @@ address {
     display: none;
 }
 /*-----------------------------*/
-/*----------------херо---------*/
+/*-----------херо планшет---------*/
+.hero {
+    padding: 112px 0px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tablet.jpg);
+}
+
 .hero-title {
     font-size: 56px;
-    line-height: 1.07143
+    line-height: 1.07143;
+    width: 496px;
 }
 
 .facilities-title {
@@ -1107,35 +1143,40 @@ address {
 }
 /*-----------------------------*/
 
-/*-----------facilities--------*/
-.facilities-list {
+/*-----------facilities планшет--------*/
+
+
+/*!!!!1 .facilities-list {
     display: flex;
     flex-wrap: wrap;
-    height: 312px;
-}
+    column-gap: 24px;
+    row-gap: 72px;
+} */
 
 .facilities-list-items {
     height: 120px;
     margin: 0 auto;
+    width: 356px;
 }
 /*-----------------------------*/
-/*------3 section team----------*/
-    .team-list {
-        display: flex;
-        gap: 64px 24px;
-        flex-wrap: wrap;
-        justify-content: center;
+/*------3 section team планшет----------*/
+.team-list {
+    display: flex;
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
-    .team-list-item {
-        height: 428px;
+.team-list-item {
+    margin: 0;
+    }
 
 }
 
 /*-----------------------------*/
 
-/*------4 section portfolio----*/
+/*------4 section portfolio планшет---*/
     .portfolio-list {
         display: flex;
     }
@@ -1148,7 +1189,7 @@ address {
         }
 /*-----------------------------*/
 
-/* footer */
+/* footer планшет*/
     .container-footer {
         align-items: baseline;
         flex-wrap: wrap;
@@ -1182,7 +1223,7 @@ address {
     }
 /*-----------------------------*/
 
-/* modal */
+/* modal планшет*/
 
 .modal {
     width: 408px;
@@ -1194,15 +1235,14 @@ address {
 }
 /*-----------------------------*/
 
-}
-
 
 /**----АДАПТИВ комп'ютер------*/
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
     .container {
         max-width: 1158px;
     }
-/*-------------header----------*/
+/*-------------header комп'ютер----------*/
+
 .header-logo {
     margin-left: 156px;
     margin-right: 76px;
@@ -1218,7 +1258,11 @@ address {
     gap: 40px;
 }
 /*-----------------------------*/
-/*----------------херо---------*/
+/*----------------херо комп'ютер---------*/
+.hero {
+    padding: 188px 0px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
+}
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -1228,14 +1272,24 @@ address {
 }
 /*-----------------------------*/
 
-/*-----------facilities--------*/
+/*-----------facilities комп'ютер--------*/
+
+.facilities-block {
+    padding: 120px 0px;
+}
 .facilities-list {
     display: flex;
+    flex-direction: row;
     gap: 24px;
+    height: 224px;
 }
 
 .facilities-list-items {
     width: calc((100% - 72px) / 4);
+    
+}
+.facilities-paragraph {
+    font-weight: 400;
 }
 
 .card-icon {
@@ -1263,26 +1317,22 @@ address {
 }
 /*-----------------------------*/
 
-/*------3 section team----------*/
+/*------3 section team комп'ютер----------*/
 .team-list {
     align-items: baseline;
     flex-wrap: nowrap;
+    gap: 24px;
 }
 
-
-/* .team-list-item {
-
-} */
-
 /*-----------------------------*/
-/*------4 section portfolio-----*/
+/*------4 section portfolio комп'ютер-----*/
 .portfolio-list-items {
         margin: 0 auto;
         width: calc((100% - 48px) / 3);
 /*-----------------------------*/
 }
 
-/** footer */
+/** footer комп'ютер*/
 .container-footer {
     /* display: flex;
     align-items: baseline; */
