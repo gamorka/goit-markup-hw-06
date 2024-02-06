@@ -1377,7 +1377,7 @@ margin-right: 120px;
 
 .footer-form {
     display: flex;
-    /* gap: 24px; */
+    gap: 24px;
 }
 
 .footer-email {
