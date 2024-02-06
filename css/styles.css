@@ -583,6 +583,7 @@ address {
 }
 
 .footer-logo {
+    text-align: center;
     color: var(--CLOUD, #4d5ae5);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -612,7 +613,7 @@ address {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
+    max-width: 288px;
     text-align: left;
 }
 
@@ -644,6 +645,14 @@ address {
     height: 40px;
 }
 
+.social-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .social-link {
     width: 100%;
     height: 100%;
@@ -666,7 +675,6 @@ address {
 }
 
 .submit-email-input {
-    text-align: center;
 }
 
 .social-paragraph {
@@ -685,6 +693,7 @@ address {
 }
 
 .footer-email {
+    text-align: center;
     color: var(--WHITE, #FFF);
     font-family: Roboto;
     font-size: 16px;
@@ -1200,19 +1209,19 @@ address {
 }
 
     .content-wrapper {
+        /* text-align: left; */
+    }
+    
+    .footer-logo {
         text-align: left;
     }
-
-    /* .footer-logo {
-
-    }  */
 
     .social-paragraph {
         text-align: left;
     }
 
     .submit-email-input {
-        text-align: left;
+        /* text-align: left; */
 }
 
     .footer-form {
