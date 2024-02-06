@@ -59,8 +59,6 @@ img {
     display: flex;
     align-items: center;
     margin-right: auto;
-    padding-top: 17px;
-    padding-bottom: 17px;
 }
 
 .header-container {
@@ -256,7 +254,7 @@ img {
     line-height: 1.11111;
     margin: 0 auto;
     margin-bottom: 72px;
-    min-width: 200px;
+    max-width: 200px;
 }
 
 .hero-button-service {
@@ -1176,6 +1174,7 @@ img {
 
 .facilities-list-items {
     width: 356px;
+    margin-bottom: 0;
 }
 /*-----------------------------*/
 /*------3 section team планшет----------*/
@@ -1273,9 +1272,7 @@ img {
     }
 /*-------------header комп'ютер----------*/
 
-.header-logo {
-    margin-left: 156px;
-    margin-right: 76px;
+.header-nav {
 }
 
 .header-contacts {
@@ -1287,6 +1284,9 @@ img {
     flex-direction: row;
     gap: 40px;
     margin-right: 156px;
+}
+
+.header-menu-item {
 }
 /*-----------------------------*/
 /*----------------херо комп'ютер---------*/
@@ -1382,13 +1382,12 @@ img {
     /* display: flex;
     align-items: baseline; */
     flex-wrap: nowrap;
-    padding: 100px 0px;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .footer-style {
-    padding: 0;
+    padding: 100px 0px;
 }
 
 .content-wrapper {
