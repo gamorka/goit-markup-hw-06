@@ -1201,28 +1201,37 @@ address {
 /*-----------------------------*/
 
 /* footer планшет*/
-    .container-footer {
-        align-items: baseline;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 72px 24px;
-        max-width: 530px
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    margin-right: 108px;
+    margin-left: 108px;
 }
 
     .content-wrapper {
         /* text-align: left; */
+        width: 264px;
     }
+
+.social-container {
+    display: block;
+    flex-direction: column;
+}
     
     .footer-logo {
-        text-align: left;
+    display: flex;
+    text-align: left;
     }
 
     .social-paragraph {
         text-align: left;
     }
 
-    .submit-email-input {
-        /* text-align: left; */
+.footer-email {
+    display: block;
+    text-align: left;
 }
 
     .footer-form {
@@ -1348,18 +1357,25 @@ address {
 }
 
 /** footer комп'ютер*/
+
+
+
 .container-footer {
     /* display: flex;
     align-items: baseline; */
     flex-wrap: nowrap;
+    padding: 100px 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-style {
+    padding: 0;
 }
 
 .content-wrapper {
 margin-right: 120px;
 }
-
-/* .footer-logo {        
-} */
 
 .footer-form {
     display: flex;
@@ -1367,16 +1383,16 @@ margin-right: 120px;
 }
 
 .footer-email {
-    margin-left: 80px;
+    display: block;
+    text-align: left;
 }
 
 .footer-input {
-margin-left: 80px;
 }
 
-/* .email-btn {
-    
-} */
+.email-btn {
+    margin-left: 0;
+}
 /*-----------------------------*/
 
 /* modal */
