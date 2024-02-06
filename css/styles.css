@@ -723,7 +723,6 @@ address {
     line-height: 1.5;
     letter-spacing: 0.04em;
     display: flex;
-    padding: 8px 24px;
     justify-content: center;
     align-items: center;
     gap: 16px;
