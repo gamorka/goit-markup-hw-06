@@ -1206,7 +1206,6 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
-    margin-right: 108px;
     margin-left: 108px;
 }
 
@@ -1378,7 +1377,7 @@ margin-right: 120px;
 
 .footer-form {
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
 }
 
 .footer-email {
@@ -1391,6 +1390,10 @@ margin-right: 120px;
 
 .email-btn {
     margin-left: 0;
+}
+
+.social-container {
+    margin-right: 80px;
 }
 /*-----------------------------*/
 
