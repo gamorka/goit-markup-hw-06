@@ -34,6 +34,11 @@ button {
 address {
     font-style: normal;
 }
+
+img {
+    display: block;
+    width: 100%;
+}
 .container {
     width: 100%;
     max-width: 320px;
@@ -1157,6 +1162,7 @@ address {
 .facilities-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     column-gap: 24px;
     row-gap: 72px;
 }
@@ -1180,7 +1186,7 @@ address {
     margin: 0;
     }
 
-}
+
 
 /*-----------------------------*/
 
@@ -1254,12 +1260,12 @@ address {
     margin-bottom: 16px;
 }
 /*-----------------------------*/
-
+}
 
 /**----АДАПТИВ комп'ютер------*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
-        max-width: 1158px;
+        max-width: 1440px;
     }
 /*-------------header комп'ютер----------*/
 
@@ -1276,6 +1282,7 @@ address {
 .header-cont-list {
     flex-direction: row;
     gap: 40px;
+    margin-right: 156px;
 }
 /*-----------------------------*/
 /*----------------херо комп'ютер---------*/
@@ -1299,13 +1306,14 @@ address {
 }
 .facilities-list {
     display: flex;
-    flex-direction: row;
     gap: 24px;
     height: 224px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .facilities-list-items {
-    width: calc((100% - 72px) / 4);
+    width: 100%;
     
 }
 .facilities-paragraph {
@@ -1357,9 +1365,6 @@ address {
 }
 
 /** footer комп'ютер*/
-
-
-
 .container-footer {
     /* display: flex;
     align-items: baseline; */
