@@ -1271,13 +1271,16 @@ img {
         max-width: 1158px;
     }
 /*-------------header комп'ютер----------*/
-
-.header-nav {
+.container {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .header-contacts {
     font-size: 16px;
     line-height: 1.5;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .header-cont-list {
@@ -1304,9 +1307,9 @@ img {
 
 .hero {
     padding: 188px 0px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/people-office1.jpg);
+            url(../images/people-office1.jpg); */
 } 
 .hero-title {
     font-size: 56px;
