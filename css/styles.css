@@ -1386,11 +1386,12 @@ img {
 
 /** footer комп'ютер*/
 .container-footer {
-    /* display: flex;
-    align-items: baseline; */
+    display: flex;
+    align-items: baseline;
     flex-wrap: nowrap;
     margin-top: 0;
     margin-bottom: 0;
+    gap: 0;
 }
 
 .footer-style {
