@@ -1298,12 +1298,16 @@ img {
          background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                  rgba(46, 47, 66, 0.7)),
              url(../images/people-office1.jpg);
+            padding: 188px 0px;
      }
 }
 
 .hero {
     padding: 188px 0px;
-}
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office1.jpg);
+} 
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
