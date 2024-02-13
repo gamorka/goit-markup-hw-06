@@ -243,6 +243,16 @@ img {
 
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2ddpx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-mob-2.jpg);
+    }
+}
+
 .hero-title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -1129,18 +1139,24 @@ img {
 }
 /*-----------------------------*/
 /*-----------херо планшет---------*/
- @media screen and (min-device-pixel-ratio: 2),
- screen and (min-resolution: 192dpi),
- screen and (min-resolution: 2ddpx) {
-    .hero {
-         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                 rgba(46, 47, 66, 0.7)),
-             url(../images/hero-tablet.jpg);
-     }
-}
 
 .hero {
     padding: 112px 0px;
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg-tab.jpg);
+}
+
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2ddpx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-tab-2.jpg);
+    }
 }
 
 .hero-title {
@@ -1271,9 +1287,23 @@ img {
         max-width: 1158px;
     }
 /*-------------header комп'ютер----------*/
+.header-container {
+    margin: 0 auto;
+}
+
 .container {
     padding-right: 0;
     padding-left: 0;
+}
+
+.header-logo {
+    margin-right: 76px;
+}
+
+.header-menu-item {
+    display: flex;
+    gap: 40px;
+    margin-right: 334px;
 }
 
 .header-contacts {
@@ -1286,30 +1316,28 @@ img {
 .header-cont-list {
     flex-direction: row;
     gap: 40px;
-    margin-right: 156px;
 }
 
-.header-menu-item {
-}
 /*-----------------------------*/
 /*----------------херо комп'ютер---------*/
-
- @media screen and (min-device-pixel-ratio: 2),
- screen and (min-resolution: 192dpi),
- screen and (min-resolution: 2ddpx) {
-     .hero {
-         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                 rgba(46, 47, 66, 0.7)),
-             url(../images/people-office1.jpg);
-     }
-}
-
 .hero {
     padding: 188px 0px;
-    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/people-office1.jpg); */
-} 
+            url(../images/hero-bg.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2ddpx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero-bg-2.jpg);
+    }
+}
+
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
