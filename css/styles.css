@@ -970,6 +970,8 @@ screen and (min-resolution: 2ddpx) {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 8px;
     margin-bottom: 24px;
@@ -987,6 +989,7 @@ screen and (min-resolution: 2ddpx) {
     line-height: 1.17;
     letter-spacing: 0.04em;
     text-decoration-line: underline;
+    margin-left: 24px;
 }
 
 .span-privacy-icn {
@@ -1277,6 +1280,10 @@ screen and (min-resolution: 2ddpx) {
 .modal-title {
     width: 360px;
     margin-bottom: 16px;
+}
+
+.policy-link {
+    margin-left: 0;
 }
 /*-----------------------------*/
 }
